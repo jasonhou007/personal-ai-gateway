@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jinbo.glm-anthropic-proxy</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/jinbo/Library/Application Support/GLMAnthropicProxy/glm_anthropic_proxy.py</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/jinbo/Library/Application Support/GLMAnthropicProxy</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>GLM_PROXY_HOST</key>
+    <string>0.0.0.0</string>
+    <key>GLM_PROXY_PORT</key>
+    <string>443</string>
+    <key>GLM_PROXY_TIMEOUT_SECONDS</key>
+    <string>3600</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>StandardOutPath</key>
+  <string>/Users/jinbo/Library/Application Support/GLMAnthropicProxy/glm-anthropic-proxy.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/jinbo/Library/Application Support/GLMAnthropicProxy/glm-anthropic-proxy.log</string>
+</dict>
+</plist>
